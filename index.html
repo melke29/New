@@ -1,12 +1,11 @@
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Melkamu Web Design</title>
+  <meta name="description" content="Melkamu Web Design creates modern websites for businesses and schools.">
+  <title>Melkamu Web Design | Professional Websites</title>
 
   <style>
     * {
@@ -17,40 +16,62 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background: #f5f8fc;
       color: #183047;
-      background: #f4f7fb;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     header {
-      background: #12304a;
+      background: #102b46;
       color: white;
+      padding: 18px 15px;
       text-align: center;
-      padding: 22px 12px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 27px;
+    }
+
+    header p {
+      color: #bde9ee;
+      margin: 5px 0 0;
     }
 
     nav {
-      background: #204d68;
-      text-align: center;
-      padding: 12px 5px;
+      background: #194766;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 13px 8px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 8px;
-      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #70e0dc;
     }
 
     .hero {
       text-align: center;
-      padding: 55px 20px;
-      background: #dceeff;
+      padding: 65px 20px;
+      background: linear-gradient(135deg, #dff5f6, #e8efff);
     }
 
     .hero h2 {
-      font-size: 32px;
-      margin-bottom: 10px;
+      font-size: 34px;
+      line-height: 1.25;
+      margin: 0 0 18px;
+    }
+
+    .hero p {
+      max-width: 520px;
+      margin: 0 auto 20px;
     }
 
     .btn {
@@ -60,39 +81,78 @@
       padding: 12px 22px;
       border-radius: 8px;
       text-decoration: none;
-      margin-top: 12px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #065f69;
     }
 
     section {
-      padding: 35px 18px;
+      padding: 42px 18px;
       text-align: center;
+    }
+
+    section h2 {
+      font-size: 27px;
+      margin-top: 0;
+    }
+
+    .intro {
+      max-width: 650px;
+      margin: auto;
     }
 
     .services {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 15px;
+      gap: 18px;
+      max-width: 1000px;
+      margin: 25px auto 0;
     }
 
     .card {
       background: white;
-      padding: 20px;
-      border-radius: 12px;
       width: 100%;
-      max-width: 300px;
-      box-shadow: 0 3px 12px #00000010;
+      max-width: 290px;
+      padding: 24px 18px;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px #102b4610;
+      border: 1px solid #e1eaf2;
+    }
+
+    .card .symbol {
+      font-size: 34px;
+    }
+
+    .card h3 {
+      margin: 8px 0;
     }
 
     #contact {
-      background: #e5f3f6;
+      background: #e4f4f5;
     }
 
     footer {
-      background: #12304a;
+      background: #102b46;
       color: white;
       text-align: center;
-      padding: 18px;
+      padding: 22px 12px;
+    }
+
+    footer p {
+      margin: 5px;
+    }
+
+    @media (max-width: 400px) {
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      nav {
+        gap: 12px;
+      }
     }
   </style>
 </head>
@@ -101,7 +161,7 @@
 
   <header>
     <h1>Melkamu Web Design</h1>
-    <p>Creative Websites for Your Business</p>
+    <p>Creative Websites. Professional Results.</p>
   </header>
 
   <nav>
@@ -111,55 +171,71 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <div class="hero" id="home">
-    <h2>Welcome to My Website</h2>
-    <p>I build simple, modern and mobile-friendly websites.</p>
-    <a class="btn" href="#services">View Services</a>
-  </div>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I help small businesses and schools create
-      a professional online presence.
-    </p>
-  </section>
-
-  <section id="services">
-    <h2>My Services</h2>
-
-    <div class="services">
-      <div class="card">
-        <h3>Business Websites</h3>
-        <p>Websites to introduce your business and services.</p>
-      </div>
-
-      <div class="card">
-        <h3>School Websites</h3>
-        <p>Websites for schools and educational projects.</p>
-      </div>
-
-      <div class="card">
-        <h3>Website Design</h3>
-        <p>Clean designs that work on mobile phones.</p>
-      </div>
+  <main>
+    <div class="hero" id="home">
+      <h2>Build Your Business Online</h2>
+      <p>
+        Modern, clean and mobile-friendly websites
+        for businesses, schools and organizations.
+      </p>
+      <a class="btn" href="#contact">Let's Work Together</a>
     </div>
-  </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Interested in a website? Contact me on WhatsApp.</p>
+    <section id="about">
+      <div class="intro">
+        <h2>About Me</h2>
+        <p>
+          Welcome to Melkamu Web Design.
+          I create simple and professional websites
+          that help businesses and schools present
+          their services online.
+        </p>
+      </div>
+    </section>
 
-    <a class="btn"
-       href="https://wa.me/251954178585"
-       target="_blank">
-       Chat on WhatsApp
-    </a>
-  </section>
+    <section id="services">
+      <h2>My Services</h2>
+      <p>Solutions designed for your needs.</p>
+
+      <div class="services">
+        <div class="card">
+          <div class="symbol">💼</div>
+          <h3>Business Websites</h3>
+          <p>Present your business, products and services online.</p>
+        </div>
+
+        <div class="card">
+          <div class="symbol">🎓</div>
+          <h3>School Websites</h3>
+          <p>Share school information and educational resources.</p>
+        </div>
+
+        <div class="card">
+          <div class="symbol">📱</div>
+          <h3>Mobile-Friendly Design</h3>
+          <p>Make your website easy to use on phones and tablets.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Let's Build Your Website</h2>
+      <p>
+        Have a project in mind?
+        Get in touch to discuss your needs.
+      </p>
+
+      <a class="btn"
+         href="https://wa.me/251954178585">
+        Contact Me on WhatsApp
+      </a>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2026 Melkamu Web Design</p>
-    <p>Designed with care.</p>
+    <p><strong>Melkamu Web Design</strong></p>
+    <p>Professional Websites for Your Business</p>
+    <p>&copy; 2026 Melkamu Web Design</p>
   </footer>
 
 </body>
